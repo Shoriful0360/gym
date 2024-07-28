@@ -37,10 +37,10 @@ body{
     font-size: 1rem;
 }
 .text-description{
-    color: rgb(131, 131, 131);
+    color: rgba(255, 255, 255, 0.5);
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 
 /*default color */
@@ -167,6 +167,31 @@ body{
      border-radius: 50% 50%;
      background-color: rgb(228, 84, 32);
  }
+ /* chage your habit style */
+.habit-container{
+    margin-top: 100px;
+}
+.habit-text-container{
+    text-align: center;
+    margin-top: 150px;
+}
+.habit-text-title{
+    font-weight: 800;
+    font-size: 3rem;
+}
+.habit-images-container{
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.habit-image-container img{ 
+   width: fit-content;
+   height: fit-content;
+   border-radius: 50%;
+   margin-bottom: 15px;
+}
  /* media responsive style */
 /* Mobile-responsive */
 @media screen and (max-width: 576px) {
@@ -216,4 +241,17 @@ body{
     .habit-images-container {
         flex-direction: column;
     }
+    /* change your habit mobile responsive */
+    
+    .habit-text-container {
+        text-align: center;
+    }
+    .habit-text-title{
+        font-size: 2.5rem;
+
+    }
+    .habit-images-container {
+        flex-direction: column;
+    }
+    
 }
