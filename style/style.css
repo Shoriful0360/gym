@@ -13,7 +13,8 @@ body{
 .header{
     max-width: 1060px;
 }
-.habit-container{
+.habit-container,
+.run-container{
     max-width: 1060px;
 }
 .primary-btn{
@@ -192,6 +193,37 @@ body{
    border-radius: 50%;
    margin-bottom: 15px;
 }
+/* run an extra mile easily */
+.run-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 50px; 
+   /* width: 1300px; */
+   /* padding-left: 150px; */
+   background-color: #222222
+}
+
+.run-text-container{
+    width: 40%;
+}
+.run-image-container{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    
+}
+.run-text-container .text-description{
+    margin-bottom: 34px;
+}
+.run-image-container img{
+   max-width: 400px;
+    max-height: 400px;
+    border-radius: 20px;
+    /* zoom: 100%; */
+    background-image: linear-gradient();
+    margin: 0;
+}
  /* media responsive style */
 /* Mobile-responsive */
 @media screen and (max-width: 576px) {
@@ -252,6 +284,22 @@ body{
     }
     .habit-images-container {
         flex-direction: column;
+    }
+     /* run and extra mile easily */
+     .run-container{
+        flex-direction: column;
+    }
+    .run-text-container{
+        width: 90%;
+       margin: 5px auto;
+    }
+    .run-image-container{
+        width: 90%;
+        margin: 5px auto;
+    }
+    .run-image-container img{
+        width: 100%;
+        height: 100%;
     }
     
 }
