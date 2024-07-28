@@ -13,9 +13,8 @@ body{
 .header{
     max-width: 1060px;
 }
-main{
-    max-width: 1440px;
-    margin: 20px auto;
+.habit-container{
+    max-width: 1060px;
 }
 .primary-btn{
     width: 200px;
@@ -81,12 +80,10 @@ main{
     width: 80px;
     text-align: center;
     padding: 8px;
-    border-radius: 20px;
-  
- 
- 
-  
-    
+    border-radius: 20px;   
+ }
+ .bar{
+    display: none;
  }
  /* banner-style */
  .banner-container{
@@ -183,6 +180,10 @@ main{
   
     .menu-bar{
         display: none;
+    }
+    .bar{
+        display: block;
+        color: white;
     }
     
     .banner-text-title{
