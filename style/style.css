@@ -11,7 +11,7 @@ body{
     display: flex;
 }
 .header{
-    max-width: 1440px;
+    max-width: 1060px;
 }
 main{
     max-width: 1440px;
@@ -46,22 +46,26 @@ main{
 
 /*default color */
 .white{
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 .orange{
-    background-color: rgb(228, 84, 32);
+    background-color: rgba(230, 83, 60, 1)
+}
+.white-two{
+    color: rgba(255, 255, 255, 0.5);
 }
 /* nav-bar-style */
 
 .container{
     justify-content: space-between;
     margin-top: 50px;
+    gap: 463px;
 
 }
 .container h2{
-    color: orangered;
+    color: rgba(230, 83, 60, 1);
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 .menu-bar{
     display: grid;
@@ -71,18 +75,12 @@ main{
     border-radius: 20px;
     align-items: center;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
-/* .menu-bar p{
-    justify-content: space-evenly;
-    margin-left: 20px;
-   
-   
-} */
 .home{
     width: 80px;
     text-align: center;
-    padding: 5px;
+    padding: 8px;
     border-radius: 20px;
   
  
@@ -94,18 +92,19 @@ main{
  .banner-container{
      display: flex;
      align-items: center;
-     max-width: 1200px;;
-     margin-top: 50px;
+     max-width: 1440px;;
+     margin-top: 90px;
+     gap: 58px;
  }
  .banner-text-title{
      font-weight: bolder;
-     font-size: 4.5rem;
+     font-size: 4.8rem;
  }
  .banner-text-description{
      margin: 25px auto;
      font-weight: 500px;
      font-size: 1.25rem;
-     color: rgb(168, 159, 159);
+     /* color: rgba(255, 255, 255, 0.5); */
  }
  .secondary-btn{
      margin-left: 10px;
@@ -126,16 +125,18 @@ main{
  }
  .card{
      width: 190px;
-     background-color: rgb(85, 80, 80);
+     background-color: rgba(255, 255, 255, 0.1);
      border-radius: 15px;
      padding: 10px;
      position: absolute;
      top: 130px;
-     right: -80px;  
+     right: -80px;
+     border: none;
+
  }
  .card-2{
      width: 190px;
-     background-color: #41352F;
+     background-color: rgba(48, 48, 48, 0.54);
      border-radius: 15px;
      text-align: justify;
      align-items: center;
@@ -169,3 +170,49 @@ main{
      border-radius: 50% 50%;
      background-color: rgb(228, 84, 32);
  }
+ /* media responsive style */
+/* Mobile-responsive */
+@media screen and (max-width: 576px) {
+    /* default style */
+    .header,.bmi-chart{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* header part style */
+  
+    .menu-bar{
+        display: none;
+    }
+    
+    .banner-text-title{
+        font-size: 3rem;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .btn{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card{
+        right: -30px;
+        top: 50px;
+    }
+    .card-2{
+        left: 20px;
+        bottom: 210px ;
+        
+    }
+    .habit-text-container {
+        text-align: center;
+    }
+    .habit-text-title{
+        font-size: 2.5rem;
+
+    }
+    .habit-images-container {
+        flex-direction: column;
+    }
+}
